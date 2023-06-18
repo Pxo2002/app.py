@@ -130,7 +130,7 @@ video.addEventListener('play', async () => {
 			} else if (result.label === 'unknown') {
 				const unknownCounter = (labelCounter['unknown'] || 0) + 1;
 
-				if (unknownCounter >= 10) {
+				if (unknownCounter >= 5) {
 					document.getElementById('title').innerText = "Unknown Detection. Try Again Later";
 					clearInterval(intervalId);
 					return;
