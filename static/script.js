@@ -120,7 +120,7 @@ video.addEventListener('play', async () => {
 				const personName = result.label;
 				labelCounter[personName] = (labelCounter[personName] || 0) + 1;
 
-				if (labelCounter[personName] >= 5) {
+				if (labelCounter[personName] >= 1) {
 					if (!attendanceUpdated) {
 						updateAttendance(personName);
 					}
